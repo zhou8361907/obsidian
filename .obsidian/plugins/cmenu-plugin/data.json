@@ -1,0 +1,101 @@
+{
+  "aestheticStyle": "default",
+  "menuCommands": [
+    {
+      "id": "cmenu-plugin:editor:toggle-bold",
+      "name": "cMenu: Toggle bold",
+      "icon": "bold-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-italics",
+      "name": "cMenu: Toggle italics",
+      "icon": "italic-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-strikethrough",
+      "name": "cMenu: Toggle strikethrough",
+      "icon": "strikethrough-glyph"
+    },
+    {
+      "id": "cmenu-plugin:underline",
+      "name": "cMenu: Toggle underline",
+      "icon": "underline-glyph"
+    },
+    {
+      "id": "cmenu-plugin:superscript",
+      "name": "cMenu: Toggle superscript",
+      "icon": "superscript-glyph"
+    },
+    {
+      "id": "cmenu-plugin:subscript",
+      "name": "cMenu: Toggle subscript",
+      "icon": "subscript-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-code",
+      "name": "cMenu: Toggle code",
+      "icon": "code-glyph"
+    },
+    {
+      "id": "cmenu-plugin:codeblock",
+      "name": "cMenu: Toggle codeblock",
+      "icon": "codeblock-glyph"
+    },
+    {
+      "id": "cmenu-plugin:editor:toggle-blockquote",
+      "name": "cMenu: Toggle blockquote",
+      "icon": "quote-glyph"
+    },
+    {
+      "id": "Enhanced-editing:shanchu-text",
+      "name": "增强编辑: ~~删除线~~",
+      "hotkeys": [
+        {
+          "modifiers": [
+            "Alt"
+          ],
+          "key": "S"
+        }
+      ],
+      "icon": "check-small"
+    },
+    {
+      "id": "Enhanced-editing:text-Color1",
+      "name": "增强编辑: 转换彩色文字1",
+      "hotkeys": [
+        {
+          "modifiers": [
+            "Mod",
+            "Shift"
+          ],
+          "key": "1"
+        }
+      ],
+      "icon": "any-key"
+    },
+    {
+      "id": "Enhanced-editing:text-background2",
+      "name": "增强编辑: 转换彩色背景2",
+      "hotkeys": [
+        {
+          "modifiers": [
+            "Mod",
+            "Alt"
+          ],
+          "key": "2"
+        }
+      ],
+      "icon": "highlight-glyph"
+    },
+    {
+      "id": "editor:toggle-strikethrough",
+      "name": "添加删除线",
+      "icon": "lucide-strikethrough"
+    }
+  ],
+  "appendMethod": "workspace",
+  "shouldShowMenuOnSelect": false,
+  "cMenuVisibility": true,
+  "cMenuBottomValue": 4.25,
+  "cMenuNumRows": 9
+}

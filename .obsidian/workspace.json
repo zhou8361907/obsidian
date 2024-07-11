@@ -1,0 +1,255 @@
+{
+  "main": {
+    "id": "66a7c4c67c300ad7",
+    "type": "split",
+    "children": [
+      {
+        "id": "a545551f65b7e4fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ff5b207dc1ed303",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "面试/1-java基础.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "73d0bffbd44a82f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "面试/4-框架.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6d222ffe1909bf6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "spring&springmvc.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ab2ce39ba052b4a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "e196be113a588eca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ebf43b5834b0736",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "96008c3e0a025158",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "流",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "99c8267ed7422fa8",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "22eea3d0bd4a390c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "b3a5b6aaba8681c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7f07292a94dffd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f576e063681540af",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "spring&springmvc.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bd3354d1f33f1c3a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "spring&springmvc.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0477beb32212f6fb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c6cbb0c30d76c2dd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "spring&springmvc.md"
+              }
+            }
+          },
+          {
+            "id": "92c24fa60fb5d9c8",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "641a715c5aa6be8c",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "remotely-save:Remotely Save": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "c6d222ffe1909bf6",
+  "lastOpenFiles": [
+    "附件/Pasted image 20240710214907.png",
+    "附件/Pasted image 20240710193022.png",
+    "附件/Pasted image 20240710192502.png",
+    "附件/Pasted image 20240710191731.png",
+    "面试/4-框架.md",
+    "spring&springmvc.md",
+    "面试/0-总体面试.md",
+    "面试/3-redis.md",
+    "java基础问答.md",
+    "附件/Pasted image 20240703112622.png",
+    "面试/1-java基础.md",
+    "面试/基础/多线程.md",
+    "Map.md",
+    "面试/6-jvm调优.md",
+    "安全感/基础规则.md",
+    "learn/自我技能/java/微服务/nacos/基础.md",
+    "1-java 基础.md",
+    "附件/Pasted image 20240702204329.png",
+    "面试/基础",
+    "面试/1-java 基础.md",
+    "附件/Pasted image 20240701201601.png",
+    "附件/Pasted image 20240701201724.png",
+    "learn/自我技能/java/基础/基础.md",
+    "面试/5-设计模式.md",
+    "面试/2-数据库.md",
+    "面试/git等工具.md",
+    "learn/自我技能/java/mybatis/插件.md",
+    "图书馆日志/7-08.md",
+    "日记/2024-06-30.md",
+    "面试",
+    "learn/自我技能/java/mybatis/缓存.md",
+    "learn/自我技能/java/mybatis/注解.md",
+    "learn/自我技能/小知识/docker基于mysql镜像构建mysql容器忘记密码解决办法.md",
+    "日记/未命名 2.canvas",
+    "日记/2024-05-12.md",
+    "日记/未命名 1.canvas",
+    "learn/自我技能/java/杂项/同步坚果云.md",
+    "learn/自我技能/java/algorithm/链表",
+    "附件/Pasted image 20240612200253.png",
+    "learn/自我技能/java/mybatis",
+    "附件/Pasted image 20240605210552.png",
+    "learn/自我技能/java/algorithm/数组",
+    "learn/自我技能/java/algorithm/动态规划",
+    "附件/Pasted image 20240527103352.png",
+    "learn/自我技能/小知识/12--18-24",
+    "learn/自我技能/小知识",
+    "learn/自我技能/java/nacos/掘金小册/nacos-server-1.4.1.zip",
+    "learn/自我技能/java/nacos/学习",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "日记/未命名.canvas"
+  ]
+}
