@@ -178,11 +178,9 @@ field属性的循环依赖
 ![[Pasted image 20240710214907.png]]
 
 1. **创建 Bean A**：
-    
     - Spring 尝试创建 Bean A，首先将 Bean A 放入三级缓存 `singletonFactories` 中。
     - 在填充 Bean A 的属性时，发现 Bean A 依赖于 Bean B。
 2. **创建 Bean B**：
-    
     - Spring 尝试创建 Bean B，首先将 Bean B 放入三级缓存 `singletonFactories` 中。
     - 在填充 Bean B 的属性时，发现 Bean B 依赖于 Bean A。
 3. **解决 Bean B 对 Bean A 的依赖**：
@@ -192,3 +190,32 @@ field属性的循环依赖
 4. **解决 Bean A 对 Bean B 的依赖**：
     
     - Bean A 获取到完全初始化好的 Bean B，完成属性填充，Bean A 初始化完成，并放入一级缓存 `singletonObjects` 中。
+
+## 必须要三级缓存吗，二级可以吗
+第二级缓存的意义：
+1. 存储已经实例化但是尚未完全初始化的bean的早期引用
+2. 避免重复创建bean
+	1. 三级缓存中放的是生成具体对象的匿名内部类，可以生产代理对象或普通对象
+	2. 如果只有二级缓存，那么每一次生产的对象在多线程环境下可能不一样
+
+# 注解
+## @Component、@Controller、@Repository、@Service
+@Component
+	普通bean
+@Controller
+	将类标记为Spring Web MVC控制器，只有被这个注解标注的才会被拦截器拦截
+@Service
+	标注为业务处理
+@Repository
+- 用于标记一个类为数据访问层组件。
+- 通常用于数据库操作，如DAO（Data Access Object）。
+- 是`@Component`的特化，表示这个类是一个数据访问组件。
+- Spring会对`@Repository`注解的类进行一些额外的异常转换处理，使其更适合数据访问层的操作。
+
+## @Autowired和@Resource的区别
+@Autowired
+	按照类型装配注入，默认情况下依赖对象必须存在
+@Resource
+	按照名称装配，找不到名称才去找类型来装配
+## RequestMapping
+用于映射url
