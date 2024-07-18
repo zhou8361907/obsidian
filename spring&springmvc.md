@@ -247,4 +247,74 @@ field属性的循环依赖
 缺点：
 	只能作用于方法级别
 
+# @Transactional
+可以用在类或者方法上，如果在类上表明该类所有方法都在同一个事务里
+属性
++ propagation用于指定事务的传播行为
++ isolation用于指定事务的隔离级别
+## 注意事项
+1. 只能用在public方法上，其他类型方法不会报错但是不生效
+2. 只能回滚非检查型异常，具体为RuntimeException及其子类和Error子类（从spring源码中可以看到，会先判断异常的类型是否属于这两种菜继续）
+	1. 非检查型异常：编译时不会提示处理的异常类型，只有运行时出现的异常
+	2. 检查型异常，在编译器会抛出的异常（IOException、SQLException）
+3. 可能通过rollbackFor属性来制定要回滚的异常
+4. 只对被容器扫描的类方法生效
+# 事务总体架构
+## 两大核心模式
+1. 策略模式
+2. 代理模式
+## 三大核心流程
+1. AOP动态代理装配流程
+2. AOP动态代理执行流程
+3. 事务执行流程
+# 事务属性定义
+## 如何开启事务
+事务管理器接口PlatFormTransactionManager通过getTransaction方法来开启四五
+## 事务属性
+1. 传播行为
+	1. PROPAGTION_REQUIRED:如果有事务则运行到同一个事务中若没有则开启一个事务，公用同一个conn
+	2. SUPPORTS：如果有事务则加入，如果没有则非事务进行
+	3. MANDATORY：如果有事务则加入，没有则抛异常
+	4. REQUIRES_NEW:总是开启一个新的事务，如果有原先的事务则挂起
+	5. NOT_SUPPORTED:总是非事务的执行，并挂起任何事务
+	6. NEVER：总是非事务执行，如果存在事务则抛异常
+	7. NESTED：嵌套事务
+2. 隔离规则
+3. 回滚规则
+4. 事务超时
+	通过timeout = 5属性设置超市时间
+5. 是否只读
+	使用readOnly = true 来制定这是一个只读事务
 
+
+
+# Spring MVC
+## 什么是spring MVC
+基于java的实现了MCC设计模式的请求驱动类型的轻量级web框架，通过将模型-视图-控制器分离，将web层进行解耦
+围绕DispatcherServlet来设计的，用来处理所有的http请求和响应。
+控制器是单例模式
+## 优点
+支持各种视图技术
+与spring 框架继承
+支持各种请求资源的映射策略
+## 核心组件
+1. 前端控制器（DispatcherServlet）
+	接受请求、相应结果相当于转发器
+2. 处理映射器（HandlerMapping）
+	根据请求的url来查找Handler
+3. 处理适配器（HandlerAdapter）
+4. 处理器（Handler）
+5. 视图解析器（ViewResolver）
+6. 视图（VIew）
+## 工作原理
+1. 发送请求到前端控制器DispatcherServlet
+2. DispatcherServlet收到请求，调用HandlerMapping获取到handle
+3. HandlerMapping根据请求url找到具体的处理器，生成处理器对象和处理器拦截器返回给DispatcherServlet
+4. DispatcherServlet调用HandlerAdapter
+5. HandlerAdapter调用具体的处理器（Handler）
+6. Handler执行完成后返回ModelAndView
+7. HandlerAdapter将Handler执行结果ModelAndView返回给DispatcherServlet
+8. DispatcherServlet将ModelAndView传给ViewResolver视图解析器进行解析
+9. ViewResolver解析后返回具体的View
+10. DispatcherServlet对View进行渲染视图（即将模型数据填充进视图）
+11. DispatcherServlet响应用户
